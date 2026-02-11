@@ -1,23 +1,19 @@
 import React ,{useEffect,useState} from "react";
 import './App.css';
-import MyComponent from "./MyComponents";
+import Timer from "./timer";
 
 
 function App(){
-  const[isVisible,setVisible]=useState(true)
+  
 
 
 
+ return (
+  <div className="App">
+    <Timer/>
 
-  useEffect(()=>{
-    console.log("i'm mountainggg....")
-  },[])
-  return <div className = "app">
-{isVisible?<MyComponent/>:<></>}
-    <button onClick={()=>setVisible(!isVisible)}>Toggle</button>
   </div>
+ )
 }
-
-
 
 export default App;
